@@ -76,4 +76,6 @@ No Node.js here → more secure & lightweight
 #------------------------------------------------------------------------------
 #NOTE:I used a multi-stage Dockerfile where the React application is built in a Node.js environment and the final build artifacts are served using Nginx. This approach reduces image size, improves security, and follows production best practices.
 
-
+#docker build -t netflix-clone:1.0 . build image
+#docker images check image
+#docker run -d -p 8080:80 --name netflix-app netflix-clone:1.0 8080 port redirect into port 80 and create container and start container
